@@ -2,9 +2,9 @@
 
 ![Hasil Tampilan](Hasil.png)
 
-Nama  : Anla Harpanda
-Kelas : TRPL 2D
-NIM   : 2311083015
+- **Nama  : Anla Harpanda**
+- **Kelas : TRPL 2D**
+- **NIM   : 2311083015**
 
 Pada proyek ini, saya telah berhasil melakukan refaktoring pada kode aplikasi Movie yang melibatkan beberapa aspek, di antaranya:
 
