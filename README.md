@@ -25,10 +25,4 @@ Aplikasi ini kini memiliki fungsi-fungsi utama sebagai berikut:
 
 Aplikasi ini menggunakan Laravel sebagai backend dan Bootstrap untuk tampilan antarmuka. Semua file gambar yang terkait dengan film disimpan dalam folder `public/images`.
 
-## Tampilan
-
-Berikut adalah tampilan hasil dari aplikasi setelah refaktoring:
-
-![Hasil Tampilan](Hasil.png)
-
 Terima kasih telah memeriksa proyek ini!
