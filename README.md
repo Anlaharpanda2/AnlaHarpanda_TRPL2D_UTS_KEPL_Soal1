@@ -1,70 +1,34 @@
-# Movie Management System
-
-This project is a movie management system built using Laravel and Blade templates. The application allows users to manage movie data, including adding, editing, and deleting movies, as well as viewing movie details.
-
-## Features
-- Display a list of movies with pagination.
-- View detailed information of each movie.
-- Add new movies with images and categories.
-- Edit and update existing movie details.
-- Delete movies with a confirmation prompt.
-
-## Refactoring Completed
-I have successfully refactored the following files:
-1. **`data-movies.blade.php`** - Optimized and cleaned up the code for displaying the movie list.
-2. **`movie-detail.blade.php`** - Refactored the code for displaying detailed movie information.
-3. **`edit-movie.blade.php`** - Improved the form for editing movie data.
-4. **`homepage.blade.php`** - Streamlined the homepage layout for displaying popular movies.
-5. **`create-movie.blade.php`** - Cleaned up the movie creation form.
-
-The code refactoring aimed to improve readability, maintainability, and remove unnecessary comments, making it easier to work with.
-
-## Screenshot of the Application
-Here is a screenshot of the application after the refactoring:
+# Refaktoring Kode Movie
 
 ![Hasil Tampilan](Hasil.png)
 
-## Installation
+Pada proyek ini, saya telah berhasil melakukan refaktoring pada kode aplikasi Movie yang melibatkan beberapa aspek, di antaranya:
 
-To install and run this application locally:
+- **Controller**: Semua kode pada controller Movie sudah dipersingkat dan disusun lebih efisien dengan menghilangkan komentar yang tidak perlu. Nama controller kini menjadi `AnlaMovingController.php`.
+- **Routes**: Rute-rute untuk halaman-halaman yang berkaitan dengan Movie juga sudah diubah untuk mencerminkan controller yang baru. 
+- **Views**: Semua tampilan (view) yang berkaitan dengan Movie sudah dipersingkat dan disesuaikan dengan controller baru.
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/movie-management.git
-    ```
+Aplikasi ini kini memiliki fungsi-fungsi utama sebagai berikut:
 
-2. Navigate to the project directory:
-    ```bash
-    cd movie-management
-    ```
+1. **Menampilkan Data Movie**: Pada halaman utama, pengguna dapat melihat daftar film lengkap dengan kategori, tahun, dan pemain.
+2. **Detail Movie**: Pengguna dapat melihat informasi lebih lanjut mengenai film, termasuk gambar sampul dan sinopsis.
+3. **Menambah dan Mengedit Movie**: Pengguna dapat menambah film baru serta mengedit film yang sudah ada melalui form input yang telah disederhanakan.
+4. **Menghapus Movie**: Pengguna dapat menghapus film yang ada dengan konfirmasi terlebih dahulu.
 
-3. Install the dependencies using Composer:
-    ```bash
-    composer install
-    ```
+## Langkah Penggunaan
 
-4. Set up your `.env` file (copy `.env.example` to `.env`):
-    ```bash
-    cp .env.example .env
-    ```
+1. Clone atau download repository ini.
+2. Install semua dependensi menggunakan perintah `composer install`.
+3. Jalankan migrasi database dengan perintah `php artisan migrate`.
+4. Jalankan aplikasi dengan perintah `php artisan serve`.
+5. Akses aplikasi di browser pada `http://localhost:8000`.
 
-5. Generate the application key:
-    ```bash
-    php artisan key:generate
-    ```
+Aplikasi ini menggunakan Laravel sebagai backend dan Bootstrap untuk tampilan antarmuka. Semua file gambar yang terkait dengan film disimpan dalam folder `public/images`.
 
-6. Run the database migrations:
-    ```bash
-    php artisan migrate
-    ```
+## Tampilan
 
-7. Serve the application:
-    ```bash
-    php artisan serve
-    ```
+Berikut adalah tampilan hasil dari aplikasi setelah refaktoring:
 
-Visit `http://localhost:8000` in your browser to see the application in action.
+![Hasil Tampilan](Hasil.png)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Terima kasih telah memeriksa proyek ini!
